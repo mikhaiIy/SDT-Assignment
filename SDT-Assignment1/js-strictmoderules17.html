@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>With "use strict":</h2>
+<h3>Inside functions, the "this" keyword is no longer the global object if not specified:</h3>
+
+<script>
+    "use strict";
+    function myFunction() {
+        alert(this);
+    }
+    myFunction();
+</script>
+
+<br><br><button>
+    <a href="js-strictmode.html">Back to JS Strict Mode</a>
+</button>
+
+</body>
+</html>

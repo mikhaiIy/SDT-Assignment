@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo">Fetch a file to change this text.</p>
+<script>
+
+    let file = "fetch_info.txt"
+
+    fetch (file)
+        .then(x => x.text())
+        .then(y => document.getElementById("demo").innerHTML = y);
+
+</script>
+
+<br><br><button>
+    <a href="js-apifetch.html">Back to JS API Fetch</a>
+</button>
+</body>
+</html>

@@ -1,0 +1,61 @@
+body{
+
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    color: darkolivegreen;
+    font-size: 60px;
+    text-align: center;
+}
+
+h3{
+    color: darkslategrey;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+section{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home{
+    text-transform: uppercase;
+}
+
+.img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p{
+    text-align: center;
+    font-size: x-small;
+    font-family: "Corbel Light";
+}
+
+@media (max-width: 800px){
+    h1{
+        font-size: 60px;
+    }
+}
+
+.fadeIn{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.fadeIn.active{
+    transform: translateY(0px);
+    opacity: 1;
+}

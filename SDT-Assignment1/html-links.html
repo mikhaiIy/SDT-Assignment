@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+
+    <h1>
+      HTML Links
+    </h1>
+
+    <p>
+      <a href="https://w3schools.com/">
+        Visit W3Schools.com!
+      </a>
+    </p>
+
+    <h2>
+      HTML Links - target Attribute
+    </h2>
+
+    <p>
+      The target attribute specifies where to open the linked document.<br>
+      The target attribute can have one of the following values:  
+    </p>
+    <pre> 
+    <b>_self</b> - Default. Opens the document in the same window/tab as it was clicked
+    <b>_blank</b> - Opens the document in a new window or tab
+    <b>_parent</b> - Opens the document in the parent frame
+    <b>_top</b> - Opens the document in the full body of the window
+    </pre>
+
+    <h2>The target Attribute</h2>
+    <a href="https://www.w3schools.com/" target="_blank">
+      Visit W3Schools!
+    </a> 
+    <p>
+      If target="_blank", the link will open in a new browser window or tab.
+    </p>
+    
+    <h2>
+      Absolute URLs vs. Relative URLs
+    </h2>
+    <p>
+      Both examples above are using an <b>absolute URL</b> (a full web address) in the <i>href</i> attribute.<br>
+
+      A local link (a link to a page within the same website) is specified with a <b>relative URL</b> (without the "https://www" part):
+    </p>
+    
+    <h2>Absolute URLs</h2>
+    <p>
+      <a href="https://www.w3.org/">
+        W3C
+      </a>
+    </p>
+    <p>
+      <a href="https://www.google.com/">
+        Google
+      </a>
+    </p>
+
+    <h2>Relative URLs</h2>
+    <p><a href="html_images.asp">HTML Images</a></p>
+    <p><a href="/css/default.asp">CSS Tutorial</a></p>
+
+    <h2>Image as a Link</h2>
+
+    <p>The image below is a link. Try to click on it.</p>
+
+    <a href="https://www.youtube.com/watch?v=T4FHY_NRBWQ" target="_blank">
+      <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+    </a>
+
+    <h2>Link to an Email Address</h2>
+
+    <p>To create a link that opens in the user's email program
+      (to let them send a new email), use mailto: inside the href attribute:
+    </p>
+
+    <p><a href="mailto:someone@example.com">Send email</a></p>
+
+    <h2>Button as a Links</h2>
+
+    <p>Click the button to go to the HTML tutorial.</p>
+
+    <button onclick="document.location='https://www.w3schools.com/html/'">HTML Tutorial</button>
+
+    <h2>Link Titles</h2>
+    <p>The title attribute specifies extra information about an element.
+      The information is most often shown as a tooltip text when the mouse moves over the element.
+    </p>
+    <a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">
+      Visit our HTML Tutorial
+    </a>
+
+    <h2>More on Absolute and Relative URL</h2>
+
+    <h2>External Paths</h2>
+
+    <p>This example uses a full URL to link to a web page:</p>
+    <p><a href="https://www.w3schools.com/html/default.asp">HTML tutorial</a></p>
+
+    <p>This example links to a page located in the html folder on the current website:</p>
+    <p><a href="/html/default.asp">HTML tutorial</a></p>
+
+    <p>This example links to a page located in the same folder as the current page:</p>
+    <p><a href="default.asp">HTML tutorial</a></p><br>
+
+    <h1>
+      HTML Links - Different Colors
+    </h1>
+
+    <a href="html-linkscolors.html">
+      Example
+    </a>
+
+    <h2>
+      HTML Links - Buttons
+    </h2>
+    <a href="html-linksbutton.html">
+      Example
+    </a>
+
+    <h1>
+      HTML Links - Create Bookmarks
+    </h1>
+    <h2>
+      Create a Bookmark in HTML
+    </h2>
+
+    <p><a href="#C4">Jump to Chapter 4</a></p>
+    <p><a href="#C10">Jump to Chapter 10</a></p>
+
+    <h2>Chapter 1</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 2</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 3</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2 id="C4">Chapter 4</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 5</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 6</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 7</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 8</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 9</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2 id="C10">Chapter 10</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 11</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 12</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 13</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 14</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 15</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <p>You can also add a link to a bookmark on another page: </p>
+    <a href="html-linksbookmark.html">
+      Click This
+    </a><br>
+
+    <br><button>
+      <a href="html-mainpage.html">
+        Back to Main Page
+      </a>
+    </button>
+
+  </body>
+</html>

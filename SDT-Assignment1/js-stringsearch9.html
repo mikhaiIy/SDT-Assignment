@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Strings</h1>
+<h2>The match() Method</h2>
+
+<p>Perform a search for "ain":</p>
+
+<p id="demo"></p>
+
+<script>
+    let text = "The rain in SPAIN stays mainly in the plain";
+    const myArr = text.match(/ain/);
+    document.getElementById("demo").innerHTML = myArr.length + " " + myArr;
+
+</script>
+
+<br><br><button>
+    <a href="js-stringsearch.html">Back to JS String Search</a>
+</button>
+
+</body>
+</html>

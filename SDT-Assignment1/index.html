@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>SDT Assignment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="home">
+    <div>
+        <h1 id="A1">Mikhail Bin Yassin</h1>
+        <h3>System Development Technology</h3>
+        <img src="images/Asset%201.png" class="img" alt="Fishing Boat">
+    </div>
+</section>
+
+<section class="content">
+    <div class="HTML fadeIn">
+        <h1 id="A2">Assignment 1</h1>
+        <h3>Hypertext Markup Language HTML</h3>
+        <a href="html-mainpage.html">
+            <img src="images/Asset%202.png" class="img" alt="Fishing Boat">
+        </a>
+        <p>clickable image</p>
+    </div>
+</section>
+
+<section class="content">
+    <div class="CSS fadeIn">
+        <h1 id="A3">Assignment 2</h1>
+        <h3>Cascading Style Sheets CSS </h3>
+        <a href="css-mainpage.html">
+            <img src="images/Asset%203.png" class="img" alt="Fishing Boat">
+        </a>
+    </div>
+</section>
+
+<section class="content">
+    <div class="JS fadeIn">
+        <h1 id="A4">Assignment 3</h1>
+        <h3>JavaScript JS</h3>
+        <a href="js-mainpage.html">
+            <img src="images/Asset%204.png" class="img" alt="Fishing Boat">
+        </a>
+        <div>
+</section>
+
+<section class="content">
+    <div class="BS fadeIn">
+        <h1 id="A5">Assignment 4</h1>
+        <h3>Bootstrap 5</h3>
+        <a href="bs-mainpage.html">
+            <img src="images/Asset%202.png" class="img" alt="Fishing Boat">
+        </a>
+    </div>
+</section>
+
+<section class="content">
+    <div class="PHP fadeIn">
+        <h1 id="A6">Assignment 5</h1>
+        <h3>PHP: Hypertext Preprocessor</h3>
+        <a href="php-mainpage.html">
+            <img src="images/Asset%201.png" class="img" alt="Fishing Boat">
+        </a>
+
+    </div>
+</section>
+
+<script>
+    window.addEventListener('scroll', fadeIn)
+
+    function fadeIn(){
+        const fadein = document.querySelectorAll('.fadeIn');
+
+        for(var i=0; i < fadein.length; i++){
+            var windowheight = window.innerHeight;
+            var pageTop = fadein[i].getBoundingClientRect().top;
+            var visibleline = 150;
+
+            if (pageTop < windowheight - visibleline){
+                fadein[i].classList.add('active');
+            }else{
+                fadein[i].classList.remove('active');
+            }
+
+        }
+    }
+
+</script>
+
+</body>
+</html>
